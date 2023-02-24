@@ -20,7 +20,7 @@ module.exports = {
       { text, prefix, isCreator} 
     ) => {
         let value = text.trim().split(" ");
-    if (value[0] === "") return m.reply(`Use ${prefix}transfer 100 @user`);
+    if (value[0] === "") return m.reply(`Use ${prefix}add 100 @user`);
     if (!text && !m.quoted) {
       return Miku.sendMessage(
         m.from,
@@ -44,10 +44,6 @@ module.exports = {
         let d = parseInt(word)
 		if (!d)return m.reply('check your text plz u r using the command in a wrong way👀');
         const balance = await eco.balance(user1, cara);
-        let a = (balance.wallet) < parseInt(word)
-        //Returns wallet, bank, and bankCapacity. Also creates a USer if it doesn't exist.
-        if(a == true) return m.reply("you dont have sufficient money to transfer👎");
-
         const deduct = await eco.deduct(user1, cara, value[0]);
         const give = await eco.give(user2, cara, value[0]);
         let buttons = [
