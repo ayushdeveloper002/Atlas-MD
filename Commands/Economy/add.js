@@ -17,7 +17,7 @@ module.exports = {
     start: async ( 
         Miku, 
       m, 
-      { text, prefix, isCreator} 
+      { isCreator } 
     ) => {
         let value = text.trim().split(" ");
     if (value[0] === "") return m.reply(`Use ${prefix}add 100 @user`);
@@ -44,7 +44,6 @@ module.exports = {
         let d = parseInt(word)
 		if (!d)return m.reply('check your text plz u r using the command in a wrong way👀');
         const balance = await eco.balance(user1, cara);
-        const deduct = await eco.deduct(user1, cara, value[0]);
         const give = await eco.give(user2, cara, value[0]);
         let buttons = [
             {
