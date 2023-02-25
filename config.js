@@ -32,20 +32,20 @@
 require("dotenv").config();
 let gg = process.env.MODS;
 if (!gg) {
-  gg = "918101187835";   // You can Change this number //
+  gg = "918602306506";   // You can Change this number //
 }
 
 // -------------------------------------------------------------- //
 
 
 global.owner = gg.split(",");
-global.mongodb = process.env.MONGODB || "mongodb+srv://fantox:xrto71r@cluster0.dnlowts.mongodb.net/?retryWrites=true&w=majority";
-global.sessionId = process.env.SESSION_ID || "ok";
-global.prefa = process.env.PREFIX || "-";
+global.mongodb = process.env.MONGODB || "mongodb://ucbp1vv4nnejgtoh66m9:hZJxgnOmxbG3QoiPevXZ@n1-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017,n2-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017/bzw32v37b8ku7lu?replicaSet=rs0";
+global.sessionId = process.env.SESSION_ID || "ayush123ok";
+global.prefa = process.env.PREFIX || ".";
 global.tenorApiKey =
   process.env.TENOR_API_KEY || "AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c";
-global.packname = process.env.PACKNAME || `Atlas MD`;
-global.author = process.env.AUTHOR || "by: Team Atlas";
+global.packname = process.env.PACKNAME || `Ayush`;
+global.author = process.env.AUTHOR || "by: Ayush";
 global.port = process.env.PORT || "8000";
 
 module.exports = {
