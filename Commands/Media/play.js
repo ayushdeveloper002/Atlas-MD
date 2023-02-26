@@ -25,11 +25,6 @@ module.exports = {
         buttonText: { displayText: "♫ Audio" },
         type: 1,
       },
-      {
-        buttonId: `${prefix}ytvd ${song.url}`,
-        buttonText: { displayText: "► Video" },
-        type: 1,
-      },
     ];
     let buttonMessage = {
       image: { url: song.thumbnail },
