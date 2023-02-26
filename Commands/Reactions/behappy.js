@@ -17,7 +17,7 @@ module.exports = {
   usage: `behappy @user`,
   react: "🌝",
   start: async (Miku, m, { text, prefix, args,mentionByTag }) => {
-    var pat = await fetchJson(`https://api.waifu.pics/sfw/happy`);
+    var pat = await fetchJson(`https://imgur.io/LFTQ621?r`);
     try {
       let user1 = m.sender;
       let recp = ``;
