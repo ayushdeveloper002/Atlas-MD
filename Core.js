@@ -414,10 +414,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
 
         //-------------------------------------------------------------------------------------------------------------
 
-
-                type: 1,
-            },];
-            let bmffg = {
+        let bmffg = {
                 image: {
                     url: botImage1
                 },
