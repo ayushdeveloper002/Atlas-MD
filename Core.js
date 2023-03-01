@@ -420,8 +420,8 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
 
         const flags = args.filter((arg) => arg.startsWith("--"));
         if (body.startsWith(prefix) && !icmd) {
-            let mikutext = `No such command programmed *${pushname}* senpai! Type *${prefix}help* or press the button below to get my full command list!\n`;
-
+           
+            
             let Button = [{
                 buttonId: `${prefix}help`,
                 buttonText: {
